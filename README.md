@@ -151,6 +151,18 @@ NovaAssist validates the customer's Order ID before retrieving information from 
 * Clearly communicates when information is unavailable.
 
 ---
+## Tech Stack
+
+| Category           | Technology             |
+| ------------------ | ---------------------- |
+| AI Platform        | Google AI Studio       |
+| LLM                | Google Gemini          |
+| Prompt Engineering | Modular System Prompts |
+| Knowledge Base     | JSON                   |
+| Documentation      | Markdown               |
+| Version Control    | Git & GitHub           |
+
+---
 
 # System Architecture
 
