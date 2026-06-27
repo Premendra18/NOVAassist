@@ -20,6 +20,15 @@ Unlike a generic chatbot, **NovaAssist** follows predefined workflows for:
 The project focuses on **AI Product Design, Prompt Engineering, Knowledge Base Design, Prompt Evaluation, and AI System Behavior** rather than traditional software development.
 
 ---
+# Project Highlights
+
+- Prompt-engineered AI retail assistant built in Google AI Studio using Google Gemini.
+- Structured JSON knowledge bases for products, FAQs, and orders.
+- Modular system prompts with business rules and safety guardrails.
+- Scenario-based evaluation with iterative prompt refinement.
+- Comprehensive documentation including prompt iterations, demo conversations, and evaluation reports.
+
+---
 
 # Problem Statement
 
@@ -151,16 +160,16 @@ NovaAssist validates the customer's Order ID before retrieving information from 
 * Clearly communicates when information is unavailable.
 
 ---
-### Tech Stack
+# Tech Stack
 
-| Category           | Technology             |
-| ------------------ | ---------------------- |
-| AI Platform        | Google AI Studio       |
-| LLM                | Google Gemini          |
-| Prompt Engineering | Modular System Prompts |
-| Knowledge Base     | JSON                   |
-| Documentation      | Markdown               |
-| Version Control    | Git & GitHub           |
+| Category                | Technology             |
+| ------------------      | ---------------------- |
+| AI Platform             | Google AI Studio       |
+| LLM                     | Google Gemini          |
+| Prompt Engineering      | Modular System Prompts |
+| Knowledge Representation| JSON                   |
+| Documentation           | Markdown               |
+| Version Control         | Git & GitHub           |
 
 ---
 
@@ -295,8 +304,9 @@ Prompt behavior was continuously refined using observations collected during tes
 
 Detailed evaluation reports are available in:
 
-* `evaluation/test_cases.md`
-* `evaluation/prompt_iterations.md`
+- [Evaluation Test Cases](evaluation/test_cases.md)
+- [Prompt Iteration Log](evaluation/prompt_iterations.md)
+- [Sample Conversations](demo/sample_conversations.md)
 
 ---
 
@@ -328,6 +338,30 @@ Potential enhancements for production deployment include:
 * Real-time inventory synchronization
 * CRM and ERP integration
 
+---
+## Project Summary
+
+| Metric | Value |
+|--------|------:|
+| Product Categories | 5 |
+| Products in Catalog | 20 |
+| FAQs | 20 |
+| Mock Orders | 15 |
+| Evaluation Test Cases | 8 |
+| Prompt Iterations | 5 |
+
+---
+# Skills Demonstrated
+
+- Prompt Engineering
+- AI Product Design
+- System Prompt Design
+- Knowledge Base Design
+- Prompt Evaluation
+- Hallucination Prevention
+- Conversation Design
+- AI Documentation
+- Git & GitHub
 ---
 
 # Conclusion
