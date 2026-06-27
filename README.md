@@ -209,7 +209,7 @@ RetailAssist-AI/
 ├── demo/
 │   └── sample_conversations.md
 │
-└── screenshots/
+└── Screenshots/
     ├── Product Recommendation.png
     ├── Product Recommended.png
     ├── Product Comparison.png
