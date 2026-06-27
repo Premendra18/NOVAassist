@@ -1,0 +1,124 @@
+{
+  "faqs": [
+    {
+      "faq_id": "FAQ-SH-01",
+      "category": "Shipping",
+      "question": "What are the shipping charges?",
+      "answer": "Standard shipping is free for all orders above INR 4,999. For orders below INR 4,999, a flat shipping fee of INR 99 is charged."
+    },
+    {
+      "faq_id": "FAQ-SH-02",
+      "category": "Shipping",
+      "question": "Do you ship internationally?",
+      "answer": "Currently, NovaMart only ships to addresses within India. We do not support international shipping at this time."
+    },
+    {
+      "faq_id": "FAQ-DL-01",
+      "category": "Delivery",
+      "question": "How long will it take for my order to be delivered?",
+      "answer": "Standard delivery takes 3 to 5 business days. Express delivery (available in select metro cities) takes 1 to 2 business days."
+    },
+    {
+      "faq_id": "FAQ-DL-02",
+      "category": "Delivery",
+      "question": "How can I track my order?",
+      "answer": "Once your order is shipped, we will send you a tracking link via SMS and email. You can also track it directly from the 'My Orders' section on our website."
+    },
+    {
+      "faq_id": "FAQ-RT-01",
+      "category": "Returns",
+      "question": "What is NovaMart's return policy?",
+      "answer": "We offer a 7-day return policy for electronics. Items must be returned in their original packaging, unused, and with the outer seal intact, except in cases of manufacturing defects."
+    },
+    {
+      "faq_id": "FAQ-RT-02",
+      "category": "Returns",
+      "question": "How do I initiate a return?",
+      "answer": "Go to 'My Orders' on our website, select the item you wish to return, click 'Return Item', and choose a reason. We will arrange a free reverse pickup within 48 hours."
+    },
+    {
+      "faq_id": "FAQ-RF-01",
+      "category": "Refunds",
+      "question": "How long does it take to receive my refund?",
+      "answer": "Once the returned product reaches our warehouse and passes quality checks, we process the refund. It takes 5 to 7 business days for the amount to reflect in your original payment method."
+    },
+    {
+      "faq_id": "FAQ-RF-02",
+      "category": "Refunds",
+      "question": "Will my shipping fee be refunded if I return an item?",
+      "answer": "No. Standard delivery charges (if any) paid at the time of purchase are non-refundable unless the item received was damaged, defective, or incorrect."
+    },
+    {
+      "faq_id": "FAQ-WR-01",
+      "category": "Warranty",
+      "question": "What does the product warranty cover?",
+      "answer": "All items come with a standard manufacturer's warranty covering structural and functional defects. It does not cover physical damage, water entry, or unauthorized repairs."
+    },
+    {
+      "faq_id": "FAQ-WR-02",
+      "category": "Warranty",
+      "question": "How do I claim a warranty for a defective product?",
+      "answer": "To claim your warranty, present your tax invoice at the nearest brand-authorized service center. You can also contact our support team to help guide you through the process."
+    },
+    {
+      "faq_id": "FAQ-PM-01",
+      "category": "Payment methods",
+      "question": "What payment methods do you accept?",
+      "answer": "We accept major Credit cards, Debit cards (Visa, Mastercard, RuPay), UPI (GPay, PhonePe, Paytm), Netbanking, and Cash on Delivery (COD)."
+    },
+    {
+      "faq_id": "FAQ-PM-02",
+      "category": "Payment methods",
+      "question": "Is Cash on Delivery (COD) available for all orders?",
+      "answer": "Cash on Delivery is available for orders valued up to INR 20,000 in eligible pin codes. Orders above this threshold must be paid online."
+    },
+    {
+      "faq_id": "FAQ-OC-01",
+      "category": "Order cancellation",
+      "question": "Can I cancel my order after it has been placed?",
+      "answer": "You can cancel your order directly from 'My Orders' before it is shipped. Once the order status changes to 'Shipped', it cannot be canceled; however, you can refuse delivery."
+    },
+    {
+      "faq_id": "FAQ-OC-02",
+      "category": "Order cancellation",
+      "question": "What happens if NovaMart cancels my order?",
+      "answer": "If we cancel your order due to stock unavailability or payment issues, we will notify you immediately and initiate a full, auto-refund to your payment source."
+    },
+    {
+      "faq_id": "FAQ-EX-01",
+      "category": "Exchange policy",
+      "question": "Can I exchange an item for a different model or color?",
+      "answer": "Direct exchanges for different models or colors are not supported. You must initiate a return for the existing item and place a fresh order for the preferred one."
+    },
+    {
+      "faq_id": "FAQ-EX-02",
+      "category": "Exchange policy",
+      "question": "What should I do if I receive a damaged or wrong product?",
+      "answer": "Please report the issue to our customer support within 24 hours of delivery with unboxing photos/video. We will arrange a free pickup and priority replacement."
+    },
+    {
+      "faq_id": "FAQ-AC-01",
+      "category": "Account issues",
+      "question": "How can I reset my account password?",
+      "answer": "Click 'Forgot Password' on the login screen, enter your registered email address or phone number, and follow the link or enter the OTP sent to reset it."
+    },
+    {
+      "faq_id": "FAQ-AC-02",
+      "category": "Account issues",
+      "question": "Do I need to create an account to place an order?",
+      "answer": "No. You can check out as a guest. However, creating an account helps you track orders quickly and access your order history easily."
+    },
+    {
+      "faq_id": "FAQ-PA-01",
+      "category": "Product availability",
+      "question": "When will an 'Out of Stock' product be restocked?",
+      "answer": "Most items are restocked within 7 to 10 business days. You can click 'Notify Me' on the product page to receive an alert as soon as it becomes available."
+    },
+    {
+      "faq_id": "FAQ-PA-02",
+      "category": "Product availability",
+      "question": "Can I pre-order or reserve a product?",
+      "answer": "No, we do not offer pre-orders or product reservation services. Items are sold on a first-come, first-served basis once they are officially in stock."
+    }
+  ]
+}
