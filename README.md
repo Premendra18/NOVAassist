@@ -1,91 +1,155 @@
 # RetailAssist AI
 
-**RetailAssist AI** is a prompt-engineered AI retail sales and customer support assistant designed for online consumer electronics stores.
+![Status](https://img.shields.io/badge/Status-Completed-success)
+![LLM](https://img.shields.io/badge/LLM-Google%20Gemini-orange)
+![Prompt%20Engineering](https://img.shields.io/badge/Focus-Prompt%20Engineering-blue)
+![Knowledge%20Base](https://img.shields.io/badge/Knowledge%20Base-JSON-brightgreen)
 
-The project demonstrates how Large Language Models (LLMs) can be structured using modular prompts, business rules, and a curated knowledge base to provide reliable product recommendations and customer support.
+RetailAssist AI is a prompt-engineered AI retail sales and customer support assistant designed for online consumer electronics stores.
 
-Unlike a generic chatbot, RetailAssist AI follows predefined conversation workflows for:
+The project demonstrates how Large Language Models (LLMs) can be structured using modular prompts, business rules, and a curated knowledge base to provide reliable, consistent, and explainable customer support.
 
-* Product recommendations
-* Product comparisons
-* FAQ handling
-* Order support
-* Human escalation
+Unlike a generic chatbot, **NovaAssist** follows predefined workflows for:
 
-The project focuses on **AI Product Design**, **Prompt Engineering**, **Knowledge Base Design**, and **Prompt Evaluation** rather than traditional software development.
+* Product Recommendations
+* Product Comparisons
+* FAQ Support
+* Order Tracking
+* Human Escalation
+
+The project focuses on **AI Product Design, Prompt Engineering, Knowledge Base Design, Prompt Evaluation, and AI System Behavior** rather than traditional software development.
 
 ---
 
-## Problem Statement
+# Problem Statement
 
 Online retail businesses receive thousands of repetitive customer queries every day regarding products, deliveries, returns, warranties, refunds, and order tracking.
 
-Handling these queries manually increases response time, operational costs, and workload for customer support teams.
+Handling these requests manually increases operational costs, response time, and customer support workload.
 
-Generic AI chatbots often hallucinate product information or provide inconsistent answers, making them unsuitable for customer-facing retail environments.
+Generic AI chatbots often hallucinate product information, invent policies, or produce inconsistent answers, making them unreliable for customer-facing retail environments.
 
 ---
 
-## Solution
+# Solution
 
-RetailAssist AI addresses this problem by providing a structured AI assistant called **NovaAssist**.
+RetailAssist AI addresses this challenge by providing a structured retail assistant called **NovaAssist**.
 
 NovaAssist operates using:
 
-* A structured system prompt
-* Product knowledge base
-* FAQ knowledge base
-* Mock order database
-* Business rules
-* Conversation workflows
+* Structured System Prompt
+* Product Knowledge Base
+* FAQ Knowledge Base
+* Mock Order Database
+* Business Rules
+* Conversation Workflows
+
+Instead of generating unrestricted responses, NovaAssist answers customer queries only using approved information from the provided knowledge base.
 
 ---
 
-## Features
+# Demo Gallery
 
-### AI-Powered Product Recommendations
+The screenshots below demonstrate NovaAssist handling common customer interactions.
 
-* Understands customer intent before making recommendations.
-* Asks clarifying questions about budget, preferences, and use case.
+## Product Recommendation
+
+![Product Recommendation](screenshots/product-recommendation.png)
+
+NovaAssist asks only the minimum clarification questions required before recommending products that satisfy all mandatory customer requirements.
+
+---
+
+## Product Comparison
+
+![Product Comparison](screenshots/product-comparison.png)
+
+NovaAssist compares products objectively using only approved catalog information and explains trade-offs without unsupported claims.
+
+---
+
+## Hallucination Prevention
+
+![Hallucination Prevention](screenshots/hallucination-prevention.png)
+
+When asked about products outside the catalog, NovaAssist refuses to invent information and instead recommends valid alternatives.
+
+---
+
+## Order Tracking
+
+![Order Tracking](screenshots/order-tracking.png)
+
+NovaAssist validates Order IDs before retrieving order information from the mock order database.
+
+---
+
+# Features
+
+## AI-Powered Product Recommendations
+
+* Understands customer intent before recommending products.
+* Collects only the minimum information required.
+* Applies domain-specific recommendation rules.
 * Recommends only products available in the NovaMart catalog.
-
-### Product Comparison
-
-* Compares products using objective specifications.
-* Highlights trade-offs instead of subjective opinions.
-* Avoids unsupported claims or marketing language.
-
-### Customer Support
-
-* Answers frequently asked questions using the FAQ knowledge base.
-* Explains shipping, returns, refunds, warranty, and payment policies.
-* Provides consistent responses based on predefined business rules.
-
-### Order Support
-
-* Handles order-related queries using a mock order database.
-* Requires a valid Order ID before retrieving order information.
-* Simulates order tracking for demonstration purposes.
-
-### Human Escalation
-
-* Escalates conversations that require human intervention.
-* Avoids making promises or performing unsupported actions.
-
-### Hallucination Prevention
-
-* Uses only approved information from the knowledge base.
-* Clearly states when information is unavailable instead of guessing.
+* Filters products based on mandatory customer requirements.
 
 ---
 
-## System Architecture
+## Product Comparison
+
+* Compares products using factual specifications.
+* Explains objective trade-offs.
+* Avoids marketing language.
+* Never invents specifications.
+
+---
+
+## Customer Support
+
+* Answers FAQs using the structured knowledge base.
+* Provides consistent information regarding:
+
+  * Shipping
+  * Returns
+  * Refunds
+  * Warranty
+  * Payments
+
+---
+
+## Order Support
+
+* Requires a valid Order ID.
+* Retrieves information from the mock order database.
+* Simulates order tracking.
+* Protects customer information by following predefined workflows.
+
+---
+
+## Human Escalation
+
+* Detects situations requiring human assistance.
+* Escalates unsupported requests.
+* Avoids making promises beyond defined business rules.
+
+---
+
+## Hallucination Prevention
+
+* Uses only approved knowledge base information.
+* Never invents products, policies, specifications, or order details.
+* Clearly communicates when information is unavailable.
+
+---
+
+# System Architecture
 
 ```text
                     Customer
                         │
                         ▼
-                NovaAssist AI
+                 NovaAssist AI
                         │
         ┌───────────────┼────────────────┐
         ▼               ▼                ▼
@@ -94,7 +158,7 @@ NovaAssist operates using:
         │               │                │
         └───────────────┼────────────────┘
                         ▼
-              Business Rules & System Prompt
+          Business Rules & System Prompt
                         │
                         ▼
                  Customer Response
@@ -102,12 +166,13 @@ NovaAssist operates using:
 
 ---
 
-## Repository Structure
+# Repository Structure
 
-```
+```text
 RetailAssist-AI/
 │
 ├── README.md
+│
 ├── data/
 │   ├── products.json
 │   ├── faqs.json
@@ -117,67 +182,136 @@ RetailAssist-AI/
 │   └── system_prompt.md
 │
 ├── evaluation/
+│   ├── test_cases.md
+│   └── prompt_iterations.md
 │
-└── demo/
+├── demo/
+│   └── sample_conversations.md
+│
+└── screenshots/
+    ├── Product Recommendation.png
+    ├── Product Recommended.png
+    ├── Product Comparison.png
+    ├── iPhone Hallucination Test.png
+    └── Ordert Tracking.png
 ```
 
 ---
 
-## Prompt Engineering Approach
+# Prompt Engineering Approach
 
-RetailAssist AI was designed using a structured prompt engineering approach rather than a single monolithic prompt.
+RetailAssist AI was designed using an iterative prompt engineering methodology rather than a single monolithic prompt.
 
-### System Prompt
+## System Prompt
 
-The system prompt establishes NovaAssist's identity, responsibilities, business rules, conversation workflow, response formatting, safety guardrails, and escalation logic.
+The system prompt defines:
 
-### Knowledge Base
+* Assistant identity
+* Responsibilities
+* Conversation workflow
+* Business rules
+* Recommendation logic
+* Safety guardrails
+* Human escalation policy
+* Response formatting
 
-Instead of relying entirely on the language model's internal knowledge, the assistant is constrained by three structured datasets:
+---
 
-* `products.json` – Product catalog
-* `faqs.json` – Store policies and FAQs
-* `orders.json` – Mock customer order database
+## Knowledge Base
 
-This approach reduces hallucinations and ensures consistent responses.
+NovaAssist is constrained using three structured datasets:
 
-### Conversation Workflow
+* **products.json** — Product catalog
+* **faqs.json** — Store policies and FAQs
+* **orders.json** — Mock customer order database
+
+This approach minimizes hallucinations and improves response consistency.
+
+---
+
+## Conversation Workflow
 
 For every customer interaction, NovaAssist follows a structured workflow:
 
 1. Identify customer intent.
-2. Determine whether additional information is required.
-3. Ask clarifying questions when necessary.
-4. Retrieve relevant information from the appropriate knowledge source.
-5. Generate a structured response.
-6. Escalate to a human representative when required.
+2. Determine whether sufficient information is available.
+3. Ask only the minimum clarification questions when required.
+4. Retrieve information from the appropriate knowledge source.
+5. Apply business rules and recommendation policies.
+6. Generate a structured response.
+7. Escalate to a human representative when appropriate.
 
-### Hallucination Prevention
+---
 
-NovaAssist is instructed to:
+## Hallucination Prevention
 
-* Never invent products or specifications.
+NovaAssist is explicitly instructed to:
+
+* Never invent products.
+* Never invent specifications.
+* Never invent prices.
 * Never fabricate order information.
 * Never create store policies.
 * Clearly state when required information is unavailable.
 
 ---
 
-## Evaluation Strategy
+# Evaluation Strategy
 
-The assistant is evaluated using scenario-based testing across multiple customer interactions.
+NovaAssist was evaluated using structured scenario-based testing.
 
-Evaluation categories include:
+Evaluation categories included:
 
 * Product Recommendations
 * Product Comparisons
 * FAQ Responses
 * Order Support
-* Human Escalation
 * Hallucination Prevention
+* Human Escalation
 * Out-of-Scope Requests
 
-The objective is to verify that NovaAssist follows business rules consistently while providing helpful and reliable responses.
+Prompt behavior was continuously refined using observations collected during testing.
 
+Detailed evaluation reports are available in:
 
-Instead of generating unrestricted responses, NovaAssist follows predefined workflows and responds only using approved information from the provided knowledge base.
+* `evaluation/test_cases.md`
+* `evaluation/prompt_iterations.md`
+
+---
+
+# Key Learnings
+
+During development, NovaAssist was improved through multiple prompt iterations driven by structured testing rather than trial and error.
+
+The project demonstrates that reliable AI assistants require more than a well-written prompt—they also require:
+
+* Clearly defined business rules
+* Structured knowledge bases
+* Controlled conversation workflows
+* Systematic evaluation
+* Iterative prompt refinement
+
+---
+
+# Future Improvements
+
+Potential enhancements for production deployment include:
+
+* Integration with live inventory APIs
+* Live order management APIs
+* Retrieval-Augmented Generation (RAG)
+* Vector database integration
+* Voice-enabled customer support
+* Multi-language support
+* Customer analytics dashboard
+* Real-time inventory synchronization
+* CRM and ERP integration
+
+---
+
+# Conclusion
+
+RetailAssist AI demonstrates how prompt engineering, structured knowledge bases, business rules, and iterative evaluation can be combined to build a reliable AI-powered retail assistant.
+
+Rather than functioning as a generic chatbot, NovaAssist follows predefined workflows, uses only approved knowledge sources, and continuously improves through structured prompt refinement—reflecting an AI product engineering approach suitable for real-world customer support systems.
+
